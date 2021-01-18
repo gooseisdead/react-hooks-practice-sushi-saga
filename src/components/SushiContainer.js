@@ -1,13 +1,21 @@
-import React from "react";
-import MoreButton from "./MoreButton";
+import React from 'react'
+import MoreButton from './MoreButton'
+import Sushi from './Sushi'
 
-function SushiContainer(props) {
+function SushiContainer({ api, handleMore, plateIndex, handleEating }) {
+
+  const nextSushi = api.slice(plateIndex, plateIndex + 4)
+  
+  const sushiPlates = nextSushi.map((sushi, idx) => <Sushi key={idx} sushi={sushi} handleEating={handleEating} />)
+  
   return (
-    <div className="belt">
-      {/* Render Sushi components here! */}
-      <MoreButton />
-    </div>
-  );
+    <>
+      <div className="belt">
+        {sushiPlates}
+        <MoreButton handleMore={handleMore} />
+      </div>
+    </>
+  )
 }
 
-export default SushiContainer;
+export default SushiContainer

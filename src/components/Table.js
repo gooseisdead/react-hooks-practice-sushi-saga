@@ -2,9 +2,19 @@ import React from 'react'
 
 function Table({ moneyInWallet, emptyPlates }) {
 
-  const renderPlates = emptyPlates.map((x, index) => (
-      <div key={index} className="empty-plate" style={{ top: -7 * index }}/>
+  const renderPlates = emptyPlates.map((beef, index) => (
+        <div key={index} className="empty-plate" style={{ top: -7 * index }}></div>
     ))
+
+  // let renderMorePlates
+
+  // if (emptyPlates.length >= 11 && index >= 11) {
+  //   renderMorePlates = emptyPlates.map((x, index) => ( <div key={index} className="empty-plate-more" style={{ top: -7 * index }}></div>
+  //   ))} else {
+  //     renderMorePlates = emptyPlates.map((x, index) => (
+  //       <div key={index} className="empty-plate" style={{ top: -7 * index }}></div>
+  //   ))}
+
 
   return (
     <>

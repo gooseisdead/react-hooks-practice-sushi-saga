@@ -6,7 +6,7 @@ function SushiContainer({ api, handleMore, plateIndex, handleEating }) {
 
   const nextSushi = api.slice(plateIndex, plateIndex + 4)
   
-  const sushiPlates = nextSushi.map((sushi, idx) => <Sushi key={idx} sushi={sushi} handleEating={handleEating} />)
+  const sushiPlates = nextSushi.map((sushi, index) => <Sushi key={index} sushi={sushi} handleEating={handleEating} />)
   
   return (
     <>

@@ -7,7 +7,7 @@ const API = "http://localhost:3001/sushis"
 function App() {
 
     const [sushis, setSushis] = useState([])
-    const [moneyInWallet, setMoneyInWallet] = useState(200)
+    const [moneyInWallet, setMoneyInWallet] = useState(2000)
     const [plateIndex, setPlateIndex] = useState(0)
   
 

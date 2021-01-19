@@ -43,6 +43,19 @@ body {
   left: 300px;
 }
 
+.empty-plate-more {
+  background-image: url("http://www.clker.com/cliparts/9/9/f/0/1194984076762834840small_plate.svg.hi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotateX(50deg);
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 400px;
+}
+
+
 .sushi-details {
   margin: auto;
   text-align: center;
